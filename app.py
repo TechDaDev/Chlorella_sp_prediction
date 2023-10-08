@@ -14,6 +14,7 @@ def predict_growth_rate(day):
 
 # Streamlit app
 st.title("Chlorella sp. Growth Rate Predictor")
+st.subheader("Predection using Random Forest Algorithms @ 95.7%")
 
 # Get user input for the day
 day = st.slider("Select the day for which you want to predict the growth rate of Chlorella sp. after treatment:", 0, 15)  # Adjust range as needed
