@@ -20,5 +20,5 @@ day = st.slider("Select the day for which you want to predict the growth rate of
 
 if st.button("Predict"):
     prediction = predict_growth_rate(day)
-    st.write(f"The predicted growth rate of Chlorella sp. after treatment for day {day} is: {prediction}")
+    st.write(f"The predicted growth rate of Chlorella sp. after treatment for day {day} is: {prediction:.3f}")
 
