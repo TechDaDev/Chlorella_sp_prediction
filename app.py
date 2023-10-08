@@ -16,9 +16,9 @@ def predict_growth_rate(day):
 st.title("Chlorella sp. Growth Rate Predictor")
 
 # Get user input for the day
-day = st.slider("Select the day for which you want to predict the growth rate of Chlorella sp. after treatment:", 0, 100)  # Adjust range as needed
+day = st.slider("Select the day for which you want to predict the growth rate of Chlorella sp. after treatment:", 0, 15)  # Adjust range as needed
 
 if st.button("Predict"):
     prediction = predict_growth_rate(day)
-    st.write(f"The predicted growth rate of Chlorella sp. after treatment for day {day} is: {prediction:.3f}")
+    st.write(f"The predicted growth rate of Chlorella sp. after treatment for day {day} is: {prediction:.4f}")
 
